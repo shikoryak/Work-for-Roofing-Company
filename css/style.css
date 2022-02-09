@@ -1,0 +1,915 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+:root {
+    --orange-color: #d75f3f;
+    --text-color-one: #403331;
+    --white-color: #FFFFFF;
+    --yellow-color: #E7B957;
+    --black-color: #403331;
+    --red-color: #d75f3f;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 15px 20px;
+}
+
+.willer-img {
+    width: 119px;
+}
+
+.icons {
+    display: flex;
+    gap: 15px;
+}
+
+.address {
+    color: rgb(64, 51, 49);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+}
+
+.container a {
+    text-decoration: none;
+    color: var(--black-color);
+}
+
+.container-nav-link .container {
+    display: flex;
+    justify-content: flex-end;
+    gap: 40px;
+}
+
+.container-nav-link {
+    background-color: #F5F5F5;
+    height: 62px;
+
+}
+
+.nav-link {
+    font-size: 15px;
+    color: var(--text-color-one);
+    text-decoration: none;
+    font-weight: 600;
+    text-decoration: solid;
+}
+
+.nav-link:hover {
+    cursor: pointer;
+    color: var(--orange-color);
+}
+
+.heading {
+    width: 100%;
+    position: relative;
+    margin-bottom: 30px;
+    background-image: url('../img/background_willer_house.webp');
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+}
+
+.heading-roof {
+    z-index: 1;
+    position: relative;
+    width: 570px;
+    padding: 245px 0;
+}
+
+.heading-roof h1 {
+    color: var(--white-color);
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 90px;
+    font-weight: 700;
+    line-height: 99px;
+}
+
+.heading-roof p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    color: var(--white-color);
+}
+
+.line {
+    height: 2px;
+    width: 8%;
+    background-color: rgb(231, 185, 87);
+    margin: 15px 0;
+}
+
+.services-title h2 {
+    color: var(--orange-color);
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight: 800;
+    line-height: 65px;
+    font-size: 54px;
+    text-align: center;
+}
+
+.services-title p {
+    color: var(--black-color);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+}
+
+.services .line {
+    background-color: rgb(245, 245, 245);
+    height: 2px;
+    width: 58.5px;
+    margin: 15px auto;
+}
+
+.card-feedback {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    transition: transform 1s;
+}
+
+.card-feedback-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.card-feedback-gallery {
+    width: calc(100% - 120px);
+    margin: 50px auto;
+    position: relative;
+}
+
+.previus,
+.next {
+    width: 30px;
+    height: 30px;
+    background: none;
+    cursor: pointer;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: calc(50% - 15px);
+    right: -50px;
+}
+
+.previus {
+    transform: rotate(180deg);
+    right: auto;
+    left: -50px;
+}
+
+.card {
+    border: 2px solid #f5f5f5;
+    text-align: center;
+    background-color: white;
+    padding: 40px 35px;
+    flex: calc(33% - 20px) 0 0;
+}
+
+.card .image {
+    width: 100px;
+    height: 100px;
+}
+
+.card h5 {
+    color: var(--black-color);
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 35px;
+    margin-top: 20px;
+}
+
+.card p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: var(--black-color);
+    margin-top: 15px;
+}
+
+.money-color {
+    font-family: 'Open Sas', sans-serif;
+    color: var(--orange-color);
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 45px;
+}
+
+.dot {
+    color: var(--yellow-color);
+    font-weight: 700;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+.service-work {
+    background-color: #F5F5F5;
+    padding: 100px 0 90px;
+
+}
+
+.service-work-repair h2 {
+    font-size: 54px;
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight: 800;
+    line-height: 65px;
+    text-align: center;
+}
+
+.service-work-repair .line {
+    background-color: #E2E1E1;
+    height: 2px;
+    width: 58.5px;
+    margin: 15px auto;
+}
+
+.service-work-repair p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+}
+
+.conditions {
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-between;
+    gap: 80px;
+}
+
+.conditions-prepayment {
+    flex: 1;
+}
+
+.conditions-prepayment h2 {
+    color: var(--yellow-color);
+    font-size: 90px;
+    font-weight: 700;
+    line-height: 99px;
+}
+
+.conditions-prepayment .title {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 30px;
+    margin-top: 20px;
+}
+
+.conditions-prepayment p {
+    margin-top: 15px;
+}
+
+.item-willer-roof img {
+    width: 570px;
+    height: 550px;
+}
+
+.item-willer-roof {
+    display: flex;
+    gap: 60px;
+}
+
+.disc-willer-roof h2 {
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 54px;
+    font-weight: 800;
+    line-height: 65px;
+}
+
+.willer-roof {
+    padding: 120px;
+}
+
+.disc-willer-roof h2 span {
+    color: var(--orange-color);
+}
+
+.disc-willer-roof .line {
+    background-color: #E2E1E1;
+    width: 57px;
+    height: 2px;
+    margin: 15px 0;
+}
+
+.disc-willer-roof .article {
+    font-size: 20px;
+    color: var(--black-color);
+    font-weight: 400;
+    line-height: 30px;
+    margin-bottom: 50px;
+}
+
+.disc-willer-roof p {
+    color: var(--black-color);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.willer-roof-button {
+    margin-top: 40px;
+}
+
+.our-skills {
+    background-color: #F5F5F5;
+    padding: 25px 15px 120px;
+}
+
+.item-our-skills h2 {
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 54px;
+    font-weight: 800;
+    line-height: 69px;
+    text-align: center;
+}
+
+.item-our-skills span {
+    color: var(--yellow-color);
+    font-size: 54px;
+    line-height: 69px;
+}
+
+.item-our-skills .line {
+    background-color: #E2E1E1;
+    width: 58.5px;
+    height: 2px;
+    text-align: center;
+    margin: 15px auto;
+}
+
+.item-our-skills p {
+    color: var(--black-color);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+}
+
+.about-card-feedback {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    transition: transform 1s;
+}
+
+.about-feedback-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.about-feedback-gallery {
+    width: calc(100% - 120px);
+    margin: 50px auto;
+    position: relative;
+}
+
+.provide {
+    border: 2px solid #f5f5f5;
+    background-color: white;
+    padding: 40px 35px;
+    flex: calc(33% - 20px) 0 0;
+    border-top: 6px solid #d75f3f;
+}
+
+.provide .image {
+    width: 70px;
+    height: 70px;
+    cursor: wait;
+}
+
+.provide h5 {
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 35px;
+    margin-top: 20px;
+    cursor: wait;
+}
+
+.provide p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-top: 15px;
+    cursor: wait;
+}
+
+.provide-dot {
+    color: var(--yellow-color);
+    cursor: wait;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.wave-background {
+    display: flex;
+    margin-bottom: -50px;
+}
+
+.wave-background img {
+    width: 100%;
+}
+
+.previus .next {
+    color: var(--orange-color);
+}
+
+.communication {
+    width: 100%;
+    position: relative;
+    background-image: url('../img/background_roof_form.webp');
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: center;
+}
+
+.communication-item {
+    z-index: 1;
+    position: relative;
+    width: 470px;
+    padding: 160px 0;
+}
+
+.communication-item h5 {
+    color: var(--white-color);
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 54px;
+    font-weight: 800;
+    line-height: 65px;
+}
+
+.communication-item p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    color: var(--white-color);
+}
+
+.communication-item .line {
+    background-color: rgba(245, 245, 245, 0.1);
+    height: 2px;
+    width: 56px;
+    margin: 15px 0;
+}
+
+.phone-number,
+.form-name,
+.form-email,
+.form-textarea {
+    background-color: #4B3F3C;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 23px;
+    width: 100%;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    margin-top: 50px;
+}
+
+.form-name,
+.form-email,
+.form-textarea {
+    background-color: #FBFBFB;
+    color: #A8A39A;
+}
+
+.phone-number::placeholder {
+    color: #A8A39A;
+}
+
+.submit {
+    background-color: var(--yellow-color);
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 23px;
+    width: 100%;
+    text-align: center;
+    border: none;
+    margin-top: 24px;
+    border-radius: 8px;
+    padding: 12px 24px;
+    cursor: pointer;
+    margin-top: 24px;
+}
+
+.submit:hover {
+    background-color: #D75F3E;
+}
+
+.showcase {
+    background-color: #F5F5F5;
+    padding-top: 100px;
+}
+
+.showcase-content h4 {
+    color: #d75f3f;
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 54px;
+    font-weight: 800;
+    line-height: 65px;
+    text-align: center;
+}
+
+.showcase-content span {
+    color: var(--yellow-color);
+}
+
+.showcase-content .line {
+    width: 58.5px;
+    height: 2px;
+    background-color: rgba(64, 51, 49, 0.1);
+    margin: 15px auto;
+}
+
+.showcase-content p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+}
+
+.about-gallery-work,
+.cooperation-work {
+    width: calc(100% - 120px);
+    margin: 50px auto;
+    position: relative;
+}
+
+.our-examples-work,
+.cooperation-work-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.our-examples-card,
+.cooperation-work-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    transition: transform 1s;
+}
+
+.examples-card {
+    text-align: center;
+    flex: calc(33% - 20px) 0 0;
+}
+
+.examples-card .image {
+    width: 100%;
+}
+
+.examples-card .address {
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 30px;
+    overflow-wrap: break-word;
+    margin-top: 20px;
+}
+
+.examples-card .data {
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+}
+
+.wave-background-two {
+    display: flex;
+    margin-top: -100px;
+}
+
+.wave-background-two img {
+    width: 100%;
+}
+
+.our-partners {
+    padding: 100px 0 110px;
+}
+
+.our-partners-desc {
+    display: flex;
+    padding: 0 15px;
+}
+
+.our-partners-clients h4 {
+    font-size: 54px;
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight: 800;
+    line-height: 65px;
+    width: 570px;
+}
+
+.our-partners-clients span {
+    color: rgb(215, 95, 63);
+}
+
+.our-partner-item p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-top: 30px;
+}
+
+.cooperation {
+    display: flex;
+}
+
+.cooperation-image {
+    width: 235px;
+    height: 174px;
+}
+
+.cooperation-work-card {
+    border: 2px solid rgb(245, 245, 245);
+    flex: calc(20% - 24px) 0 0;
+    height: 175px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cooperation-work-card img {
+    width: 35%;
+}
+
+.cooperation-work-card .curbed {
+    width: 90%;
+}
+
+.testimonials {
+    background-color: #403331;
+    padding: 100px 0 120px;
+    cursor: default;
+}
+
+.testimonials-item {
+    margin-top: 30px;
+}
+
+.testimonials-item h6 {
+    color: var(--white-color);
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 54px;
+    font-weight: 800;
+    line-height: 65px;
+    text-align: center;
+}
+
+.testimonials-item span {
+    color: var(--red-color);
+}
+
+.testimonials-item .line {
+    background-color: rgba(245, 245, 245, 0.1);
+    width: 58.5px;
+    height: 2px;
+    margin: 15px auto;
+}
+
+.testimonials-item p {
+    color: var(--white-color);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+}
+
+.testimonials-item-card {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.feedback {
+    border: 1px solid #FFFFFF;
+    text-align: center;
+    background-color: white;
+    padding: 70px 35px;
+    flex: calc(33% - 20px) 0 0;
+    margin-top: 50px;
+    cursor: default;
+}
+
+.feedback .image {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+
+.feedback .name {
+    margin-top: 20px;
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 35px;
+}
+
+.feedback .description {
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.feedback .data {
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    color: rgb(157, 147, 145);
+}
+
+.industry {
+    padding: 100px 0 120px;
+    cursor: default;
+    cursor: default;
+}
+
+.industry-updates h3 {
+    color: var(--red-color);
+    font-size: 54px;
+    font-family: 'Libre Franklin', sans-serif;
+    line-height: 65px;
+    font-weight: 800;
+    text-align: center;
+
+}
+
+.industry-updates span {
+    color: var(--yellow-color);
+}
+
+.industry-updates .line {
+    background-color: #EBEAEA;
+    margin: 15px auto;
+    width: 58.5px;
+    height: 2px;
+}
+
+.industry-updates p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+
+}
+
+.services {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    gap: 30px;
+}
+
+.services-repair .data {
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+    color: #403331;
+}
+
+.services-repair .title {
+    font-family: 'Libre Franklin', sans-serif;
+    margin-top: 10px;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 30px;
+}
+
+.services-repair p {
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #403331;
+    cursor: pointer;
+}
+
+.services-repair p:hover {
+    text-decoration: underline;
+}
+
+.button-services {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.button-text {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 23px;
+}
+
+.request-section {
+    background-image: url('../img/backgrround_request_free_estimate.webp');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 120px 0;
+}
+
+.request-section .container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.request-form {
+    background-color: var(--white-color);
+    width: 570px;
+    cursor: default;
+    text-align: center;
+    padding: 60px 80px;
+}
+
+.request-form h2 {
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 54px;
+    font-weight: 800;
+    line-height: 65px;
+    text-align: center;
+}
+
+.request-form .word {
+    color: var(--red-color);
+}
+
+.request-form span {
+    color: var(--yellow-color);
+}
+
+.request-form .line {
+    background-color: #EBEAEA;
+    margin: 15px auto;
+    width: 58.5px;
+    height: 2px;
+}
+
+.request-form p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+    color: #403331;
+    margin-bottom: 50px;
+}
+
+.request-form .form-name,
+.request-form .form-email,
+.request-form .form-textarea {
+    margin-top: 0;
+    margin-bottom: 24px;
+}
+
+.footer-information {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 15px 20px;
+}
+
+.willer-footer {
+    margin-top: 30px;
+    padding: 0 15px;
+}
+
+.willer-footer p {
+    margin-top: 30px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+}
+
+.willer-footer-img {
+    width: 132px;
+}
+.footer-information-nav {
+display: flex;
+}
