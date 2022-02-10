@@ -176,7 +176,7 @@ header .container {
     left: -50px;
 }
 
-.card {
+.feedback-card {
     border: 2px solid #f5f5f5;
     text-align: center;
     background-color: white;
@@ -184,12 +184,12 @@ header .container {
     flex: calc(33% - 20px) 0 0;
 }
 
-.card .image {
+.feedback-card .image {
     width: 100px;
     height: 100px;
 }
 
-.card h5 {
+.feedback-card h5 {
     color: var(--black-color);
     font-family: 'Libre Franklin', sans-serif;
     font-size: 26px;
@@ -198,7 +198,7 @@ header .container {
     margin-top: 20px;
 }
 
-.card p {
+.feedback-card p {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     font-weight: 400;
@@ -364,14 +364,14 @@ header .container {
     text-align: center;
 }
 
-.about-card-feedback {
+.gallery-container-inner {
     display: flex;
     justify-content: space-between;
     gap: 30px;
     transition: transform 1s;
 }
 
-.about-feedback-container {
+.gallery-container {
     width: 100%;
     overflow: hidden;
 }
@@ -549,9 +549,8 @@ header .container {
     text-align: center;
 }
 
-.about-gallery-work,
 .cooperation-work {
-    width: calc(100% - 120px);
+    width: 100%;
     margin: 50px auto;
     position: relative;
 }
@@ -656,6 +655,7 @@ header .container {
 
 .cooperation-work-card .curbed {
     width: 90%;
+    z-index: -1;
 }
 
 .testimonials {
@@ -968,8 +968,45 @@ header .container {
     line-height: 21px;
     margin: 5px 0 10px;
 }
+
 .footer-line {
     height: 2px;
     width: 100%;
     background-color: rgb(245, 245, 245);
+}
+
+.gallery-dots {
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gallery-dots button {
+    width: 30px;
+    height: 30px;
+    background: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+}
+
+.gallery-dots button:before {
+    display: block;
+    content: "";
+    background: var(--orange-color);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    opacity: 0.25;
+}
+
+.gallery-dots button:hover:before,
+.gallery-dots button.active:before {
+    opacity: 1;
 }
