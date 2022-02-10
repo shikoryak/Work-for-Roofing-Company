@@ -891,13 +891,13 @@ header .container {
 .footer-information {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 25px 15px 20px;
+    padding: 60px 0 30px;
+
 }
 
 .willer-footer {
-    margin-top: 30px;
     padding: 0 15px;
+    width: 25%;
 }
 
 .willer-footer p {
@@ -910,6 +910,66 @@ header .container {
 .willer-footer-img {
     width: 132px;
 }
+
 .footer-information-nav {
-display: flex;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 25%;
+    padding: 0 35px;
+}
+
+.footer-information-nav:hover {
+    text-decoration: underline;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.footer-information-contact {
+    width: 25%;
+}
+
+.footer-information-contact a {
+    line-height: 24px;
+}
+
+.footer-information-contact .item,
+.footer-information-visit .item {
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 30px;
+    margin-bottom: 15px;
+}
+
+.footer-information-visit {
+    width: 25%;
+}
+
+.footer-information-visit p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.visit-icons {
+    margin-top: 30px;
+}
+
+.footer-confiden .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.footer-confiden p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    margin: 5px 0 10px;
+}
+.footer-line {
+    height: 2px;
+    width: 100%;
+    background-color: rgb(245, 245, 245);
 }
