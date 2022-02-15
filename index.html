@@ -13,7 +13,7 @@
 
 <body>
     <header>
-        <div class="container">
+        <div class="container header-address">
             <img src="img/willer_roof.svg" alt="Willer_roof" class="willer-footer-img">
             <p class="address">34, Brooklyn, NY <br> <a href="tel:+1(234) 567-8900">+1(234) 567-8900</a></p>
             <p class="address">24, Nordhoff St, LA <br> <a href="tel:+1(234) 567-8901">+1(234) 567-8901</a></p>
@@ -22,6 +22,12 @@
                 <a href="instagram.com"><img src="icons/instagram.svg" width="32" height="32" alt=""></a>
                 <a href="youtube.com"><img src="icons/youtube.svg" width="32" height="32" alt=""></a>
             </div>
+
+            <button class="button-menu" id="buttonMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
         <div class="container-nav-link">
             <div class="container">
@@ -32,6 +38,33 @@
                 <a href="#contact_us" class="nav-link">Contact us</a>
             </div>
         </div>
+
+        <div class="mobile-header" id="headerNavbar">
+            <div class="logo-mobile">
+                <a href="./index.html">
+                    <img src="img/willer_roof.svg" alt="Willer_roof" class="willer-footer-img">
+                </a>
+                <button class="button-menu-close">
+                    <span class="left"></span>
+                    <span class="right"></span>
+                </button>
+            </div>
+            <div class="links-mobile">
+                <a href="#ourServices" class="nav-link">Our Services</a>
+                <a href="#about_us" class="nav-link">About us</a>
+                <a href="#showcase" class="nav-link">Showcase</a>
+                <a href="#testimonials" class="nav-link">Testimonials</a>
+                <a href="#contact_us" class="nav-link">Contact us</a>
+                <p class="address">34, Brooklyn, NY <br> <a href="tel:+1(234) 567-8900">+1(234) 567-8900</a></p>
+                <p class="address">24, Nordhoff St, LA <br> <a href="tel:+1(234) 567-8901">+1(234) 567-8901</a></p>
+                <div class="icons">
+                    <a href="facebook.com"><img src="icons/facebook.svg" width="32" height="32" alt=""></a>
+                    <a href="instagram.com"><img src="icons/instagram.svg" width="32" height="32" alt=""></a>
+                    <a href="youtube.com"><img src="icons/youtube.svg" width="32" height="32" alt=""></a>
+                </div>
+            </div>
+        </div>
+
     </header>
 
     <section class="heading">
@@ -157,7 +190,7 @@
         <div class="container">
 
             <div class="item-willer-roof">
-                <div>
+                <div class="item-willer-roof-image">
                     <img src="img/about_willer_roof.webp" alt="Willer_roof">
                 </div>
                 <div class="disc-willer-roof">
@@ -488,6 +521,7 @@
         </div>
     </footer>
     <script src="js/gallery.js"></script>
+    <script src="js/heder-navbar.js"></script>
 </body>
 
 </html>
