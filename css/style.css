@@ -5,6 +5,7 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
+    min-width: 320px;
 }
 
 :root {
@@ -20,6 +21,7 @@ body {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
+    padding: 0 10px;
 }
 
 header .container {
@@ -337,7 +339,7 @@ header .container {
 
 .our-skills {
     background-color: #F5F5F5;
-    padding: 25px 15px 120px;
+    padding: 25px 0 120px;
 }
 
 .item-our-skills h2 {
@@ -452,6 +454,7 @@ header .container {
     z-index: 1;
     position: relative;
     width: 470px;
+    max-width: 100%;
     padding: 160px 0;
 }
 
@@ -623,11 +626,15 @@ header .container {
     font-family: 'Libre Franklin', sans-serif;
     font-weight: 800;
     line-height: 65px;
-    width: 570px;
 }
 
 .our-partners-clients span {
     color: rgb(215, 95, 63);
+}
+
+.our-partners-clients,
+.our-partner-item {
+    flex: 1;
 }
 
 .our-partner-item p {
@@ -1114,5 +1121,83 @@ header .container {
     .links-mobile .address a {
         color: rgb(64, 51, 49);
         text-decoration: none;
+    }
+
+    .heading-roof {
+        width: 100%;
+    }
+
+    .item-willer-roof,
+    .testimonials-item-card,
+    .conditions,
+    .services,
+    .footer-information {
+        flex-wrap: wrap;
+    }
+
+    .item-willer-roof-image,
+    .disc-willer-roof {
+        width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .feedback,
+    .conditions-prepayment,
+    .services-repair,
+    .footer-information>div {
+        flex: 0 0 100%;
+    }
+
+    .footer-information>div {
+        padding: 0;
+    }
+
+    .footer-information {
+        gap: 15px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .willer-roof {
+        padding: 120px 0;
+    }
+
+    .our-partners-desc {
+        flex-wrap: wrap;
+    }
+
+    .our-partners-clients,
+    .our-partner-item {
+        flex: 0 0 100%;
+    }
+
+    .testimonials-item h6 {
+        font-size: 34px;
+    }
+
+    .feedback-card h5 {
+        font-size: 18px;
+    }
+
+    .about-feedback-gallery,
+    .card-feedback-gallery,
+    .about-gallery-work {
+        width: calc(100% - 80px);
+    }
+
+    .card {
+        flex: 0 0 100%;
+    }
+
+    .previus {
+        left: -42px;
+    }
+
+    .next {
+        right: -42px;
+    }
+    .request-form {
+        max-width: 100%;
+        padding: 60px 10px;
     }
 }
